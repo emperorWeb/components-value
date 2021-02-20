@@ -29,7 +29,7 @@ export default {
         path:"/model/model"
       },{
         name:"provide和inject",
-        path:"/provideInject/provide"
+        path:"/index/provideInject"
       },{
         name:"$parent和$children",
         path:"/parentChildren/parent"

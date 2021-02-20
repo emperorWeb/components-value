@@ -25,9 +25,11 @@ export default {
         }
     },
     created(){
+        //this.$bus.on需要在created中使用，否则不会生效
         this.$bus.on('add',this.handleAddRandom)
     },
     beforeDestroy(){
+        //需要在beforeDestroy中移除,因为组件销毁后，就没有必要把监听的句柄存储在vue-bus里面了
         this.$bus.off('add',this.handleAddRandom)
     }
 }

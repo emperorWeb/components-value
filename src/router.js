@@ -36,6 +36,12 @@ export default new Router({
       name: "centralEventB",
       component: () =>
         import("@/views/centralEvent/brotherB.vue")
+    },
+    {
+      path: "/index/provideInject",
+      name: "provideInject",
+      component: () =>
+        import("@/views/provideInject/provide.vue")
     }
   ]
 })
