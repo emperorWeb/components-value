@@ -1,22 +1,18 @@
 <template>
 <div class="treeds-list">
-    <h1>子组件</h1>
-    <div class="object-list">
-        <div>{{listObj.name}}</div>
-        <div>{{listObj.title}}</div>
-    </div>
-    <inject-c></inject-c>
+    <h1>孙子组件</h1>
+    <ul>
+        <li v-for="(item,index) in listArr" :key="index">
+            <div>{{item.name}}</div>
+            <div>{{item.title}}</div>
+        </li>
+    </ul>
 </div>
 
 </template>
 
 <script>
-import injectC from './injectC.vue'
 export default {
-    components:{
-        injectC
-        
-    },
     inject:['listObj','listArr'],
     
     data() {
@@ -47,5 +43,11 @@ h1{
     color:#333;
     font-size: 26px;
 }
-
+ul{
+    padding:5px 10px;
+    margin-top:20px;
+    border:1px solid red;
+    color:rgb(206, 59, 194);
+    font-size: 26px;
+}
 </style>

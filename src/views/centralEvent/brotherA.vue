@@ -1,18 +1,21 @@
 <template>
     <div>
         <ul class="brother-list">
-            <li>接收子组件传的值</li>
+            <li>父组件</li>
             <li>{{number}}</li>
         </ul>
-        <Counter></Counter>
+        <counter-b></counter-b>
+        <counter-c></counter-c>
     </div>
 </template>
 
 <script>
-import Counter from './components/counter.vue'
+import counterB from './components/counterB.vue'
+import counterC from './components/counterC.vue'
 export default {
     components:{
-        Counter
+        counterB,
+        counterC
     },
     data(){
         return {
