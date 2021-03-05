@@ -26,13 +26,13 @@ export default {
         path:"/index/centralEvent"
       },{
         name:"v-model",
-        path:"/model/model"
+        path:"/index/model"
       },{
         name:"provide和inject",
         path:"/index/provideInject"
       },{
         name:"$parent和$children",
-        path:"/parentChildren/parent"
+        path:"/index/parent"
       },{
         name:"vuex",
         path:""

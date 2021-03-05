@@ -42,6 +42,18 @@ export default new Router({
       name: "provideInject",
       component: () =>
         import("@/views/provideInject/provide.vue")
+    },
+    {
+      path: "/index/model",
+      name: "model",
+      component: () =>
+        import("@/views/model/model.vue")
+    },
+    {
+      path: "/index/parent",
+      name: "parent",
+      component: () =>
+        import("@/views/parentChildren/parent.vue")
     }
   ]
 })
