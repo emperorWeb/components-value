@@ -54,6 +54,11 @@ export default new Router({
       name: "parent",
       component: () =>
         import("@/views/parentChildren/parent.vue")
+    },{
+      path: "/css/a",
+      name: "a",
+      component: () =>
+        import("@/views/css/a.vue")
     }
   ]
 })
